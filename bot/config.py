@@ -1,17 +1,18 @@
 from os import environ as env
 
 class Telegram:
-    API_ID = int(env.get("TELEGRAM_API_ID", 1234))
-    API_HASH = env.get("TELEGRAM_API_HASH", "xyz")
-    OWNER_ID = int(env.get("OWNER_ID", 1234567890))
+    API_ID = env.get("TELEGRAM_API_ID", 23990433)
+    API_HASH = env.get("TELEGRAM_API_HASH", "e6c4b6ee1933711bc4da9d7d17e1eb20")
+    OWNER_ID = int(env.get("OWNER_ID", 5821871362))
     ALLOWED_USER_IDS = env.get("ALLOWED_USER_IDS", "").split()
-    BOT_USERNAME = env.get("TELEGRAM_BOT_USERNAME", "BotFather")
-    BOT_TOKEN = env.get("TELEGRAM_BOT_TOKEN", "1234:abcd")
-    CHANNEL_ID = int(env.get("TELEGRAM_CHANNEL_ID", -1001234567890))
+    BOT_USERNAME = env.get("TELEGRAM_BOT_USERNAME", "File_ToLinks_Bot")
+    BOT_TOKEN = env.get("TELEGRAM_BOT_TOKEN", "5977289238:AAFUOFc0r9FHw0hPbNMmYvVjm_j2EyiH25k")
+    CHANNEL_ID = int(env.get("TELEGRAM_CHANNEL_ID", -1001682397310))
+    BOT_WORKERS = int(env.get("BOT_WORKERS", 10))
     SECRET_CODE_LENGTH = int(env.get("SECRET_CODE_LENGTH", 12))
 
 class Server:
-    BASE_URL = env.get("BASE_URL", "http://127.0.0.1:8080")
+    BASE_URL = env.get("BASE_URL", "https://fwcge-219461eb25a1.herokuapp.com/")
     BIND_ADDRESS = env.get("BIND_ADDRESS", "0.0.0.0")
     PORT = int(env.get("PORT", 8080))
 
